@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+   
+    
+
+    
+</head>
+<body>
+    <div id="menu" data-role="page" data-title="menu" data-theme="a">
+
+        <div id="header" data-role="header" data-position="fixed">
+            <h4>Menu</h4>
+        </div>
+
+        <div id="content2" data-role="content">
+           <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+               <div data-role="collapsible">
+                   <h3>Display Balance</h3>
+                   <p>Your current balance is:</p>
+                   <p id="test"></p>
+               </div>
+           </div>
+
+           <div data-role="collapsible">
+               <h3>Add Funds</h3>
+               <label for="">Deposit:</label>
+               <input type="text" name="text1" id="deposit">
+               <p id="confirmDeposit"></p>
+               <button class="ui-btn" onclick="addFunds()">Confirm</button>
+           </div>
+
+           <div data-role="collapsible">
+               <h3>Exit</h3>
+               <p>Are you sure that you want to exit</p>
+               <button class = "ui-btn" onclick="index()">YES</a>
+
+               
+           </div>
+        </div>
+
+        <div id="footer" data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
